@@ -1,7 +1,7 @@
 // Here are all the information needed for the game
 var game = {
     state: false,
-    dictionary: ["apple", "orange", "banana", "indispicable", "impossible", "boring", "distress", "some", "utopia"],
+    dictionary: ["apple", "orange", "banana", "volunteer", "impossible", "boring", "distress", "some", "utopia", "awesome", "coding", "blah"],
     win: 0,
     loss: 0,
     guessesLeft: 9
@@ -80,8 +80,6 @@ function gameStart() {
         }
     }
 }
-
-
 
 // Reset the number of guesses left
 function reset() {
