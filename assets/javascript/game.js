@@ -34,8 +34,6 @@ function getWord() {
         game.word[i] = randomWord.charAt(i);
         game.guessWord[i] = "_";
     }
-    console.log(game.word);
-    console.log(game.guessWord);
     // Update the <h1 id="word"></h1> with _ _ _ _ _
     getID("word").innerHTML = game.guessWord.join(" ");
 }
@@ -61,7 +59,6 @@ function gameStart() {
                 }
             }
             // losing condition
-            console.log(game.word.toString() === game.guessWord.toString());
             if (game.word.toString() !== game.guessWord.toString() && game.guessesLeft === 0){
                 game.loss++;
                 game.state = false;
