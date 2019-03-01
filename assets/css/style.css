@@ -1,3 +1,9 @@
+body {
+    background-image: url("../images/prism.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #instructions {
     background: #996633;
     border-radius: 15px;
@@ -6,4 +12,8 @@
 #warning {
     background: #990000;
     border-radius: 15px;
+}
+
+#stats {
+    font-size: 30px;
 }

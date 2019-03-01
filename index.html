@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Word Guessinng Game</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container mt-4">
         <!-- Main Section -->
         <div class="row">
             <div class="col">
@@ -31,21 +31,22 @@
         <div class="row">
             <div class="col text-center">
                 <!-- This row will display all the characters that have been guessed -->
-                <h2 id="guessedLetters">You have guessed:</h2>
+                <h2 id="guessedLetters" class="text-white">You have guessed:</h2>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
                 <!-- This row will display the number of guesses left -->
-                <h4 id="guessesLeft">Remaining Guesses: 9</h4>
+                <h4 id="guessesLeft" class="text-white">Remaining Guesses: 9</h4>
             </div>
         </div>
+        <hr>
         <div class="row">
             <ul class="list-group">
-                <li class="list-group-item">Game Statistics </li>
+                <li class="list-group-item bg-primary font-weight-bold" id="stats">Game Statistics </li>
                 <!-- <li class="list-group-item">Average Characters guessed per game</li> -->
-                <li class="list-group-item" id = "win">Wins: 0</li>
-                <li class="list-group-item" id = "loss">Losses: 0</li>
+                <li class="list-group-item list-group-item-success" id = "win">Wins: 0</li>
+                <li class="list-group-item list-group-item-danger" id = "loss">Losses: 0</li>
             </ul>
         </div>
     </div>
