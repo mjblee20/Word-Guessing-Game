@@ -43,6 +43,7 @@ $(document).ready(function() {
         document.onkeypress = function guess(event) {
             // saves the key pressed as a variable
             var char = event.key;
+            console.log(event.key);
             // checks if key is a letter
             if (event.keyCode >= 97 && event.keyCode <= 122) {
                 game.guessesLeft--;
@@ -73,10 +74,13 @@ $(document).ready(function() {
             } else {
                 alert("You have entered a non-alphabet character. You should only enter alphabets!");
             }
+
+            $(".class").text(event.key);
+
         }
     }
 
-    // Reset the number of guesses left
+    // Reset the state of the game. 
     function reset() {
         game.guessesLeft = 9;
         getID("guessedLetters").innerHTML = "You have guessed: ";
